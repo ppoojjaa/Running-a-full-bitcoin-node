@@ -20,4 +20,21 @@ STARTING THE BUILD PROCESS:
 
 
 CONFIGURATION FILE OF BITCOIN
-13. 
+13. Open text editor on the VirtualBox. 
+--
+datadir = /lotsofdspace/bitcoin
+txindex = 1
+rpcuser = code
+rpcpassword = qwerty1345
+--
+Save it in the bitcoin file as 'bitcoin.config'
+ 
+
+RUNNING ON CONSOLE:
+14.On terminal: bitcoind -printtoconsole
+
+BITCOIN SYNCRO PROCESS WILL RUN ON BACKEND
+15. bitcoind -daemon  {Starts the bitcoin core}
+16. bitcoin-cli getblockhash 1000 
+
+{https://en.bitcoin.it/wiki/Original_Bitcoin_client/API_calls_list has all the commands}
