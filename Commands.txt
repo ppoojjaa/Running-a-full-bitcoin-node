@@ -1,0 +1,23 @@
+Commands on terminal to run a bitcoin full node:
+Install git first
+
+
+1. git clone https://github.com/bitcoin/bitcoin/.git
+2. git tag 
+{tells youwhat versions of bitcoin are available, the rc ones indicate unstability}
+3. git checkout v0.21.1
+4. git status
+5. more doc/build-unix.md {for dependencies}
+6. Copy all the sudo commands from above and execute each one individually (dnf doesn't work always so can skip it)
+
+STARTING THE BUILD PROCESS:
+7. ./autogen.sh
+8. ./configure {check if all the dependencies are installed right}
+9. make {compiling everything}
+10. sudo make install 
+11. which bitcoind
+12. which bitcoing-cli 
+
+
+CONFIGURATION FILE OF BITCOIN
+13. 
